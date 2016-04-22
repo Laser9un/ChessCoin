@@ -1,5 +1,7 @@
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
+#include <QDesktopServices>
+#include <QUrl>
 
 #include "walletmodel.h"
 #include "bitcoinunits.h"
@@ -194,4 +196,46 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::on_pushButton_6_clicked()
+{
+    QString link="https://bitcointalk.org/index.php?topic=1510517.0";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_5_clicked()
+{
+    QString link="http://chesscoinpro.com";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_4_clicked()
+{
+    QString link="http://chesscryptocoin.blogspot.com";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_3_clicked()
+{
+    QString link="https://twitter.com/Chess_Coin";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_clicked()
+{
+    QString link="https://www.facebook.com/chesscoin";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_2_clicked()
+{
+    QString link="https://www.reddit.com/user/Isolani159";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_7_clicked()
+{
+    QString link="https://yobit.net/en/trade/CHESS/BTC";
+       QDesktopServices::openUrl(QUrl(link));
 }
